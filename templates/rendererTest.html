@@ -6,6 +6,17 @@
     <title>Hello World</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>Rendering Test</h1>
+    {% for e in employees %}
+    <ol>
+        <li>{{ e.name }}</li>
+        <li>{{ e.surname }}</li>
+        <li>{{ e.city }}</li>
+        <li>{{ e.bday }}</li>
+        <li>{{ e.is_married }}</li>
+        <li>{{ e.age }}</li>
+    </ol>
+    {% endfor %}
+
 </body>
 </html>
